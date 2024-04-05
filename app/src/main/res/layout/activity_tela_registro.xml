@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/backgroundGen"
+    tools:context=".telaRegistro">
+
+    <ImageView
+        android:id="@+id/imgSquareBGReg"
+        android:layout_width="352dp"
+        android:layout_height="528dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/backgroundRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registro"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg" />
+
+    <EditText
+        android:id="@+id/textNameReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <EditText
+        android:id="@+id/textSenhaReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/textEmailReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:hint="Endereço de E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/textLoginCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já tem uma conta?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Entrar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <ImageView
+        android:id="@+id/imgQuestionReg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/imgLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSquareBGReg"
+        app:srcCompat="@drawable/applogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
