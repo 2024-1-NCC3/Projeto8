@@ -60,8 +60,7 @@ public class telaRegistro extends AppCompatActivity {
         // Conectando a função ao botão
         textoLogar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(telaRegistro.this, telaLogin.class);
-                startActivity(numbersIntent);
+                finish();
             }
         });
 
