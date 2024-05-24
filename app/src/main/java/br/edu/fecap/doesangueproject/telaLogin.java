@@ -41,9 +41,6 @@ public class telaLogin extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Imprimindo o conteúdo digitado no console
-                Log.e("EMAIL DIGITADO", "O email digitado é: " + emailLog.getText().toString());
-                Log.e("SENHA DIGITADO", "A senha digitada é: " + senhaLog.getText().toString());
 
                 // Definindo o diretorio e o nome do arquivo do Email
                 File directoryE = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
@@ -63,7 +60,6 @@ public class telaLogin extends AppCompatActivity {
                 }
                 // Salvando os dados do email para uma string
                 dadosEmail = dadosE.toString();
-                Log.e("EMAIL", "O email é: " + dadosEmail);
 
                 // Definindo o diretorio e o nome do arquivo da senha
                 File directoryP = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
@@ -83,7 +79,6 @@ public class telaLogin extends AppCompatActivity {
                 }
                 // Salvando os dados da senha para uma string
                 dadosSenha = dadosP.toString();
-                Log.e("SENHA", "A senha é: " + dadosSenha);
 
                 // Comparando dados digitados com o arquivo
                 if (emailLog.getText().toString().equals(dadosEmail) && senhaLog.getText().toString().equals(dadosSenha)) {
@@ -91,6 +86,10 @@ public class telaLogin extends AppCompatActivity {
 
                     // Iniciando a MainActivity
                     Intent intent = new Intent(telaLogin.this, MainActivity.class);
+                    Intent intentRE = getIntent();
+                    Intent intentPR = new Intent(telaLogin.this, PerfilFragment.class);
+                    intentPR.putExtra("nome", intentRE.getStringExtra("nome"));
+                    intentPR.putExtra("email", intentRE.getStringExtra("email"));
                     startActivity(intent);
                     finish(); // Finalizando telaLogin para que o usuário não possa voltar para ela com o botão de voltar
                 } else {

@@ -124,6 +124,10 @@ public class telaRegistro extends AppCompatActivity {
                     oswP.close();
                     fosP.close();
                     Toast.makeText(contextWrapper, "Cadastrado com sucesso!", Toast.LENGTH_LONG).show();
+                    Intent intentRE = new Intent(telaRegistro.this, telaLogin.class);
+                    intentRE.putExtra("nome", nome.getText().toString());
+                    intentRE.putExtra("email", email.getText().toString());
+                    finish();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
