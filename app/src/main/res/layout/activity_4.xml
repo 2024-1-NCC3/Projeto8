@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE9D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_back4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:contentDescription="@string/user_icon_description"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/button_back" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Caminho do sangue pós-doação."
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="13dp"
+                app:cardBackgroundColor="#C74343"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="1) Depois que o processo de doação é concluído, tubos com amostras são enviados para laboratórios que irão analisar se o sangue pode mesmo ser doado e bolsas são encaminhadas para o setor de processamento do sangue. O serviço de hemoterapia vai dividir esse sangue em componentes:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="133dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Eritrocitários: concentrados de hemácias, indicados para tratar anemias e hemorragias agudas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Plaquetários: utilizados para reposição nos casos em que os baixos níveis desse componente colocam o paciente em risco de hemorragia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Plasmáticos: indicados no tratamento de pacientes com distúrbios de coagulação, como púrpura trombocitopênica."
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#C74343"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="2) Simultaneamente são realizados testes com as amostras para detectar a presença de sífilis, hepatites B e C, doença de Chagas, HIV I, HTLV I e II, além de testes imuno-hematológicos, que identificam o tipo de sangue e suas características específicas. Enquanto os resultados dos testes não chegam, as amostras ficam armazenadas temporariamente em local refrigerado. Esse processo é chamado de quarentena. Só são liberadas as bolsas com resultados não reagentes/negativos para os testes sorológicos e para os testes de detecção de ácido nucleico viral (NAT)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#C74343"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="3) Após a obtenção dos resultados dos exames, os hemocomponentes são liberados e, em seguida, são emitidos rótulos com informações relacionadas à coleta e à liberação. Há regras específicas de armazenamento que os bancos devem seguir, como: glóbulos vermelhos (hemácias) são armazenados em geladeira, a temperaturas entre 2º C e 6º C. As plaquetas são guardas em temperatura ambiente, entre 20º C e 24º C, e o plasma é armazenado congelado à temperatura de 18º C negativos. Cada hemocomponente possui uma validade. As plaquetas, por exemplo, só podem ser utilizadas por cinco dias após a coleta do sangue. O plasma congelado, por sua vez, dura até um ano; glóbulos vermelhos, cerca de um mês."
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

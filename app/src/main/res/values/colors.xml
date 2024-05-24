@@ -8,6 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backgroundGen">#FFE9D8</color>
+    <color name="rosa">#FFE9D8</color>
     <color name="backgroundRed">#BF4040</color>
     <color name="textLogo">#940E0E</color>
+    <color name="cinza">#9C9C9C</color>
+    <color name="rosa1">#FA5252</color>
+    <color name="rosa2">#FA7070</color>
+    <color name="rosa3">#FA9696</color>
+    <color name="rosa4">#FFB8B8</color>
+    <color name="rosa5">#FFCCCC</color>
 </resources>

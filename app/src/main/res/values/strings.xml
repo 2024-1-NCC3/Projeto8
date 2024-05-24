@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">DoeSangueProject</string>
+    <string name="user_icon_description">Ícone de usuário</string>
+    <string name="welcome_message">Bem-vindo!</string>
+    <string name="back_button_description">Imagem-button</string>
+    <string name="scroll_horizontal">Scroll-horizontal</string>
+    <string name="Quem_pode_doar_sangue">Pessoas saudáveis com peso igual ou superior a 50 kg, entre 16 e 69 anos de idade.</string>
+    <string name="Quem_nao_pode_doar_sangue">Pessoas com menos de 50 kg, menores de 16 anos ou maiores de 69 anos, e aqueles que têm condições médicas específicas, como HIV, hepatite, malária, entre outros.</string>
+    <string name="Quanto_tempo_leva">O processo de doação geralmente leva de 10 a 15 minutos, mas o tempo total pode variar de acordo com o fluxo no local de doação.</string>
+    <string name="frequencia_para_doar">Em geral, homens podem doar sangue a cada 2 meses (ou 56 dias), enquanto mulheres podem doar a cada 3 meses (ou 84 dias).</string>
+    <string name="quanto_sangue_e_retirado">Em média, são coletados aproximadamente 450 ml de sangue durante uma doação.</string>
+    <string name="Se_eu_estiver_resfriado_ou_gripado">Não, é recomendado que os doadores estejam saudáveis e livres de doenças infecciosas no momento da doação.</string>
+    <string name="nav_drawer">Abrir Drawer</string>
 </resources>

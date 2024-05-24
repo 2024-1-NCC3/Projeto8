@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/backgroundGen"
+    tools:context=".telaLogin">
+
+    <ImageView
+        android:id="@+id/imgSquareBG"
+        android:layout_width="494dp"
+        android:layout_height="600dp"
+        android:background="@drawable/btn_comecar"
+        android:backgroundTint="@color/backgroundRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="32dp"
+        android:text="Entrar"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBG"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBG" />
+
+    <EditText
+        android:id="@+id/textEmailLog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="25dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/email_1"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/cinza"
+        android:ems="10"
+        android:hint="Endereço de E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBG"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBG"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <EditText
+        android:id="@+id/textSenhaLog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/poppins"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@drawable/cadeado_1"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/cinza"
+        android:textSize="25sp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBG"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toTopOf="@+id/imgSquareBG"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_black"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAllCaps="false"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBG"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toBottomOf="@+id/textSenhaLog"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <TextView
+        android:id="@+id/textRegisterCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Não tem uma conta?"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintEnd_toStartOf="@+id/textRegistrar"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <TextView
+        android:id="@+id/textRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Registre-se"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintEnd_toEndOf="@+id/imgSquareBG"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="@+id/imgSquareBG"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="366dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSquareBG"
+        app:layout_constraintVertical_bias="0.662"
+        app:srcCompat="@drawable/logo_horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

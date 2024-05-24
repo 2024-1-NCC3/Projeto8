@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="10dp"
+    android:scrollbarThumbHorizontal="@android:color/transparent"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Welcome Message -->
+
+        <!-- CardView with ImageSlider -->
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="13dp"
+            android:clickable="true"
+            android:contentDescription="@string/user_icon_description"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Bem-vindo!"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.263"
+            app:layout_constraintStart_toEndOf="@id/userIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="553dp"
+            android:layout_height="252dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeMessage">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imagemSlide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="1000"
+                app:iss_period="1000"
+                app:iss_title_background="@drawable/default_loading" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tiposSanguineos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tipos Sanguíneos"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/scroll_horizontal"
+            android:layout_marginTop="60dp"
+            android:scrollbarThumbHorizontal="@drawable/custom_scrollbar_trumb"
+            android:scrollbarTrackHorizontal="@drawable/custom_scrollbar_track"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card1"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card2"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card3"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card4"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card5"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card6"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card7"></ImageView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card8"></ImageView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/posicaodeestoque"
+            android:layout_width="545dp"
+            android:layout_height="355dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/posicaodeestoque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>

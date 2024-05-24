@@ -1,8 +1,6 @@
 package br.edu.fecap.doesangueproject;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -12,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -26,11 +23,10 @@ public class telaLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_tela_login);
 
         // Criado o botão para trocar para tela de registro
-        TextView textoRegistrar = (TextView) findViewById(R.id.textRegistrar);
+        TextView textoRegistrar = findViewById(R.id.textRegistrar);
         // Conectando a função ao botão
         textoRegistrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -45,15 +41,13 @@ public class telaLogin extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 // Imprimindo o conteúdo digitado no console
                 Log.e("EMAIL DIGITADO", "O email digitado é: " + emailLog.getText().toString());
                 Log.e("SENHA DIGITADO", "A senha digitada é: " + senhaLog.getText().toString());
 
                 // Definindo o diretorio e o nome do arquivo do Email
                 File directoryE = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-                //Log.e("TAG", "download is : " + directoryE.getAbsolutePath() + "" + directoryE);
-                File emailFile = new File(directoryE, "Email" + ".txt");
+                File emailFile = new File(directoryE, "Email.txt");
                 // Criando um StringBuilder para Email
                 StringBuilder dadosE = new StringBuilder();
                 try {
@@ -73,8 +67,7 @@ public class telaLogin extends AppCompatActivity {
 
                 // Definindo o diretorio e o nome do arquivo da senha
                 File directoryP = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-                //Log.e("TAG", "download is : " + directoryP.getAbsolutePath() + "" + directoryP);
-                File senhaFile = new File(directoryP, "Senha" + ".txt");
+                File senhaFile = new File(directoryP, "Senha.txt");
                 // Criando um StringBuilder para senha
                 StringBuilder dadosP = new StringBuilder();
                 try {
@@ -93,16 +86,17 @@ public class telaLogin extends AppCompatActivity {
                 Log.e("SENHA", "A senha é: " + dadosSenha);
 
                 // Comparando dados digitados com o arquivo
-                if (emailLog.getText().toString().equals(dadosEmail) && senhaLog.getText().toString().equals(dadosSenha)){
+                if (emailLog.getText().toString().equals(dadosEmail) && senhaLog.getText().toString().equals(dadosSenha)) {
                     Toast.makeText(getApplicationContext(), "DADOS CORRETOS", Toast.LENGTH_LONG).show();
-                }else{
+
+                    // Iniciando a MainActivity
+                    Intent intent = new Intent(telaLogin.this, MainActivity.class);
+                    startActivity(intent);
+                    finish(); // Finalizando telaLogin para que o usuário não possa voltar para ela com o botão de voltar
+                } else {
                     Toast.makeText(getApplicationContext(), "DADOS ERRADOS", Toast.LENGTH_LONG).show();
                 }
-
             }
         });
-
     }
-
-
 }

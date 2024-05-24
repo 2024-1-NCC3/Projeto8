@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,26 +13,49 @@
         android:icon="@mipmap/ic_launcher2"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DoeSangueProject"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".Activity5"
+            android:exported="false" />
+        <activity
+            android:name=".Activity4"
+            android:exported="false" />
+        <activity
+            android:name=".Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".PaginaIntrodutoria"
+            android:exported="false" />
+        <activity
+            android:name=".telaLogin"
+            android:exported="false" />
         <activity
             android:name=".telaRegistro"
             android:exported="false" />
         <activity
-            android:name=".restrDoar"
-            android:exported="true"/>
-        <activity
-            android:name=".importDoar"
-            android:exported="true"/>
-        <activity
-            android:name=".telaLogin"
+            android:name=".TelaSplash"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

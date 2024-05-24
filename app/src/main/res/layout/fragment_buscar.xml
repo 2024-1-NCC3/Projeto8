@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="10dp"
+    tools:context=".BuscarFragment"
+    android:scrollbarThumbHorizontal="@android:color/transparent"
+    android:scrollbarThumbVertical="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="19dp"
+                android:clickable="true"
+                android:contentDescription="@string/user_icon_description"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/button_back"
+                app:layout_constraintBottom_toTopOf="@+id/searchView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Buscar"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.397"
+                app:layout_constraintStart_toEndOf="@+id/button_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_view_bg"
+                app:iconifiedByDefault="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu"
+                app:queryHint="Buscar em SangueSolidário" />
+
+            <TextView
+                android:id="@+id/Duvidas_frequentes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="345dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Dúvidas Frequentes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+            <!-- Primeiro Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading1TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_expand"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Quem pode doar sangue?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button1"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Duvidas_frequentes" />
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading1TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading1TV"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:text="@string/Quem_pode_doar_sangue"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Heading1TV" />
+
+            <!-- Segundo Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading2TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_expand1"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Quem não pode doar sangue?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading2TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading2TV" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="@string/Quem_nao_pode_doar_sangue"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/Heading2TV"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Terceiro Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading3TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_expand2"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Duração da doação de sangue?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading3TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading3TV" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="@string/Quanto_tempo_leva"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/Heading3TV"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Quarto Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading4TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_expand3"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Frequência para doar sangue?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading4TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading4TV" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="@string/frequencia_para_doar"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/Heading4TV"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Quinto Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading5TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_expand4"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Quanto sangue é coletado?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+            <ImageView
+                android:id="@+id/button5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading5TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading5TV" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="@string/quanto_sangue_e_retirado"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/Heading5TV"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Sexto Conjunto -->
+
+            <TextView
+                android:id="@+id/Heading6TV"
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_expand5"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Posso doar resfriado ou gripado?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text5" />
+
+            <ImageView
+                android:id="@+id/button6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Heading6TV"
+                app:layout_constraintBottom_toBottomOf="@+id/Heading6TV" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:text="@string/Se_eu_estiver_resfriado_ou_gripado"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/Heading6TV"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

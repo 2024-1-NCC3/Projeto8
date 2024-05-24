@@ -11,8 +11,8 @@
     <ImageView
         android:id="@+id/imgSquareBGReg"
         android:layout_width="352dp"
-        android:layout_height="528dp"
-        android:background="@drawable/ic_launcher_background"
+        android:layout_height="480dp"
+        android:background="@drawable/btn_comecar"
         android:backgroundTint="@color/backgroundRed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Registro"
+        android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
         app:layout_constraintHorizontal_bias="0.496"
@@ -40,18 +41,20 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/user6"
         android:drawablePadding="5dp"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/cinza"
         android:ems="10"
-        android:hint="Nome"
+        android:fontFamily="@font/poppins"
+        android:hint="Nome Completo"
         android:inputType="textEmailAddress"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
         app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -59,14 +62,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:backgroundTint="@color/black"
+        android:background="@drawable/btn_black"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Registrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
         app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.766" />
+
 
     <EditText
         android:id="@+id/textSenhaReg"
@@ -75,9 +83,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableLeft="@drawable/lock"
+        android:drawableLeft="@drawable/cadeado_1"
         android:drawablePadding="5dp"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/cinza"
         android:ems="10"
         android:hint="********"
         android:inputType="textPassword"
@@ -86,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <EditText
         android:id="@+id/textEmailReg"
@@ -95,9 +103,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableLeft="@drawable/mail"
+        android:drawableLeft="@drawable/email_1"
         android:drawablePadding="5dp"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/cinza"
         android:ems="10"
         android:hint="Endereço de E-mail"
         android:inputType="textEmailAddress"
@@ -106,54 +114,46 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.434" />
 
     <TextView
         android:id="@+id/textLoginCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
         android:text="Já tem uma conta?"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
         app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <TextView
         android:id="@+id/textLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Entrar"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imgSquareBGReg"
         app:layout_constraintEnd_toEndOf="@+id/imgSquareBGReg"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.745"
         app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
         app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:layout_constraintVertical_bias="0.926" />
-
-    <ImageView
-        android:id="@+id/imgQuestionReg"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imgSquareBGReg"
-        app:layout_constraintTop_toTopOf="@+id/imgSquareBGReg"
-        app:srcCompat="@drawable/question" />
+        app:layout_constraintVertical_bias="0.951" />
 
     <ImageView
         android:id="@+id/imgLogo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="266dp"
+        android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgSquareBGReg"
-        app:srcCompat="@drawable/applogo" />
+        app:srcCompat="@drawable/logo_horizontal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
